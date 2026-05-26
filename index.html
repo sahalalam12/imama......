@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak, Imama! 🌸✨</title>
+    <style>
+        /* Modern Aesthetic Kawaii Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, #fff0f5, #ffe4e1, #ffd3e8, #e8f0fe, #fff0f5);
+            background-size: 400% 400%;
+            font-family: 'Quicksand', sans-serif;
+            animation: softGradient 15s ease infinite;
+            overflow: hidden;
+            padding: 20px;
+            position: relative;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill:%23ff7597;"><text y="20" font-size="20">✨</text></svg>'), auto;
+        }
+
+        @keyframes softGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Ambient Glassmorphic Background Clouds */
+        .glass-cloud {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            border-radius: 50%;
+            filter: blur(20px);
+            z-index: 1;
+            animation: cloudFloat 8s infinite ease-in-out alternate;
+        }
+
+        @keyframes cloudFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30px, -20px) scale(1.15); }
+        }
+
+        /* Floating Kawaii Mascot Buddies */
+        .mascot {
+            font-size: 4.5rem;
+            position: absolute;
+            user-select: none;
+            filter: drop-shadow(0 10px 20px rgba(255, 143, 162, 0.3));
+            z-index: 2;
+        }
+
+        .bear-bunny {
+            bottom: 8%;
+            left: 8%;
+            animation: floaty 3.5s infinite ease-in-out alternate;
+        }
+
+        .kitty-cloud {
+            top: 8%;
+            right: 8%;
+            animation: floaty 4.5s infinite ease-in-out alternate-reverse;
+        }
+
+        @keyframes floaty {
+            0% { transform: translateY(0) rotate(-6deg) scale(1); }
+            100% { transform: translateY(-25px) rotate(6deg) scale(1.05); }
+        }
+
+        /* Next-Gen Aesthetic Card Container */
+        .aesthetic-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 55px 35px;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 30px 70px rgba(255, 143, 162, 0.35), 
+                        inset 0 0 20px rgba(255, 255, 255, 0.6);
+            border: 4px solid rgba(255, 182, 193, 0.7);
+            position: relative;
+            z-index: 10;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .aesthetic-card:hover {
+            transform: translateY(-12px) scale(1.01);
+            box-shadow: 0 45px 80px rgba(255, 143, 162, 0.5);
+            border-color: #ff7597;
+        }
+
+        /* Animated Header Elements */
+        .card-header-emojis {
+            font-size: 3.5rem;
+            margin-bottom: 12px;
+            display: inline-block;
+            animation: happyDance 2.5s infinite ease-in-out;
+        }
+
+        @keyframes happyDance {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.15) translateY(-10px) rotate(5deg); }
+        }
+
+        .aesthetic-card h1 {
+            font-family: 'Fredoka', sans-serif;
+            color: #ff527b;
+            font-size: 2.7rem;
+            margin-bottom: 5px;
+            text-shadow: 3px 3px 0px #ffe4e1;
+        }
+
+        /* Aesthetic Chudail Soft Badge */
+        .chudail-tag {
+            font-size: 1.1rem;
+            color: #bfa399;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff3f5, #ffebee);
+            padding: 6px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 25px;
+            border: 2px dashed rgba(255, 117, 151, 0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .aesthetic-card p {
+            color: #6e585e;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
+            font-weight: 500;
+        }
+
+        /* Heart-Beat Pulse Button */
+        .cute-btn {
+            background: linear-gradient(135deg, #ff7597, #ff9ebb);
+            color: #fff;
+            border: none;
+            padding: 16px 45px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            font-family: 'Fredoka', sans-serif;
+            border-radius: 35px;
+            cursor: pointer;
+            box-shadow: 0 12px 30px rgba(255, 117, 151, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            animation: heartbeat 2s infinite ease-in-out;
+            transition: all 0.3s ease;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.06); box-shadow: 0 15px 35px rgba(255, 117, 151, 0.6); }
+        }
+
+        .cute-btn:hover {
+            animation: none;
+            transform: scale(1.1) translateY(-3px);
+            background: linear-gradient(135deg, #ff527b, #ff7597);
+        }
+
+        /* Interactive Velvet Popup Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 192, 203, 0.25);
+            backdrop-filter: blur(12px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+            z-index: 1000;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .popup-window {
+            background: #fff;
+            padding: 50px 35px;
+            border-radius: 40px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            max-width: 420px;
+            width: 90%;
+            border: 4px solid #ffccd5;
+            transform: scale(0.5);
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .overlay.active .popup-window {
+            transform: scale(1);
+        }
+
+        .popup-window h2 {
+            font-family: 'Fredoka', sans-serif;
+            color: #ff527b;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Cloud Wish Text Canvas */
+        .wish-cloud-box {
+            background: linear-gradient(180deg, #fff6f8 0%, #fff0f4 100%);
+            padding: 24px;
+            border-radius: 25px;
+            font-style: italic;
+            color: #594247;
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+            border: 2px dashed #ffb6c1;
+            line-height: 1.7;
+            box-shadow: inset 0 4px 10px rgba(255,182,193,0.1);
+        }
+
+        .close-popup-btn {
+            background: #ff527b;
+            color: #fff;
+            border: none;
+            padding: 14px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: 'Quicksand', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .close-popup-btn:hover {
+            background: #e03b62;
+            transform: translateY(-2px);
+        }
+
+        /* Trail & Magic Particle Design */
+        .kawaii-particle {
+            position: absolute;
+            pointer-events: none;
+            animation: floatUpAndAway 3.8s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+            font-size: 2.2rem;
+            z-index: 999;
+        }
+
+        @keyframes floatUpAndAway {
+            0% { transform: translateY(105vh) translateX(0) scale(0.3) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-20vh) translateX(180px) scale(1.6) rotate(360deg); opacity: 0; }
+        }
+
+        /* Cursor sparkle bits */
+        .sparkle-trail {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ffb6c1;
+            box-shadow: 0 0 10px #ff527b;
+            pointer-events: none;
+            animation: sparkOut 0.8s linear forwards;
+            z-index: 9999;
+        }
+
+        @keyframes sparkOut {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0); opacity: 0; }
+        }
+
+        /* Music Floating Icon */
+        .music-control {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            z-index: 100;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Audio Element (Sweet/Cozy Instrument Background Track) -->
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/active_storage/sfx/123/123-200.wav" type="audio/wav">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Music Status Indicator Widget -->
+    <div class="music-control" onclick="toggleMusic()" id="musicIcon" title="Play/Pause Music">🎵</div>
+
+    <!-- Aesthetic Decorative Clouds -->
+    <div class="glass-cloud" style="width: 250px; height: 250px; top: 10%; left: -50px;"></div>
+    <div class="glass-cloud" style="width: 300px; height: 300px; bottom: -50px; right: -50px; animation-delay: -3s;"></div>
+
+    <!-- Active Characters -->
+    <div class="mascot bear-bunny">🐰🍼🐻</div>
+    <div class="mascot kitty-cloud" style="bottom: 10%; right: 8%;">🐱🌈</div>
+
+    <!-- Main Aesthetic Greeting Box -->
+    <div class="aesthetic-card">
+        <div class="card-header-emojis">✨🍭🎀</div>
+        <h1>Eid Mubarak, Imama!</h1>
+        <div class="chudail-tag">✨ Chudail 🧙‍♀️ ✨</div>
+        
+        <p>I wanted to wish you a very happy Eid in the most magical way possible, so I built this interactive fantasy world just for you, Imama! Tap the gift box below to open! 🥰👇</p>
+        
+        <button class="cute-btn" onclick="revealImamasGift()">Open Your Eid Gift 🎁🎈</button>
+    </div>
+
+    <!-- Magical Velvet Surprise Popup Canvas -->
+    <div class="overlay" id="giftOverlay">
+        <div class="popup-window">
+            <h2>For You, Imama! 🍧</h2>
+            
+            <div class="wish-cloud-box" id="wishTextContainer">
+                Fetching sweet sparkles for you... 🍰
+            </div>
+            
+            <button class="close-popup-btn" onclick="hideGift()">Aww, Thank You! 🥺💗</button>
+        </div>
+    </div>
+
+    <!-- Core Dynamic Interaction Script -->
+    <script>
+        const imamasSweetNotes = [
+            "May your Eid day be packed with endless sweetness, unlimited Eidi, and lots of laughs, Imama! 🌙🧁✨",
+            "Sending you a giant basket of virtual sweet hugs, beautiful smiles, and magical vibes! Eid Mubarak, Imama! 🤗🌸🧸",
+            "Hoping your pockets overflow with cash/Eidi and your tummy overflows with yummy Sheer Khurma today, Imama! 💰🍲✨",
+            "May all your cute little secret wishes come true today, and may your face keep glowing with happiness. Eid Mubarak, Imama! 💕🍭",
+            "Even though you are a certified chudail, you are still the absolute cutest! Stay blessed and enjoy your special day, Imama! 🧙‍♀️🎈❤️"
+        ];
+
+        const music = document.getElementById('bgMusic');
+        let musicPlaying = false;
+
+        // Cursor Sparkle Magic Logic
+        document.addEventListener('mousemove', function(e) {
+            if(Math.random() > 0.15) return; 
+            const spark = document.createElement('div');
+            spark.classList.add('sparkle-trail');
+            spark.style.left = e.pageX + 'px';
+            spark.style.top = e.pageY + 'px';
+            
+            const colors = ['#ff7597', '#ffb6c1', '#ffd3e8', '#fff9db'];
+            spark.style.background = colors[Math.floor(Math.random() * colors.length)];
+            
+            document.body.appendChild(spark);
+            setTimeout(() => spark.remove(), 800);
+        });
+
+        function revealImamasGift() {
+            // Auto start lovely music on gift tap (Browsers allow audio after a click interaction)
+            if(!musicPlaying) {
+                music.play().catch(err => console.log("Audio waiting for full gesture"));
+                musicPlaying = true;
+                document.getElementById('musicIcon').innerText = '⏸️';
+            }
+
+            const randIdx = Math.floor(Math.random() * imamasSweetNotes.length);
+            document.getElementById('wishTextContainer').innerText = imamasSweetNotes[randIdx];
+            
+            document.getElementById('giftOverlay').classList.add('active');
+            popKawaiiConfetti();
+        }
+
+        function hideGift() {
+            document.getElementById('giftOverlay').classList.remove('active');
+        }
+
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+                document.getElementById('musicIcon').innerText = '⏸️';
+                musicPlaying = true;
+            } else {
+                music.pause();
+                document.getElementById('musicIcon').innerText = '🎵';
+                musicPlaying = false;
+            }
+        }
+
+        function popKawaiiConfetti() {
+            const sweetConfetti = ['🎈', '🌸', '✨', '💖', '🧸', '🐱', '🐰', '🍭', '🍧', '🧙‍♀️', '🍬', '⭐'];
+            
+            for (let i = 0; i < 55; i++) {
+                setTimeout(() => {
+                    const bubble = document.createElement('div');
+                    bubble.classList.add('kawaii-particle');
+                    bubble.innerText = sweetConfetti[Math.floor(Math.random() * sweetConfetti.length)];
+                    bubble.style.left = Math.random() * 100 + 'vw';
+                    bubble.style.animationDuration = (Math.random() * 1.5 + 2.5) + 's'; 
+                    
+                    document.body.appendChild(bubble);
+                    setTimeout(() => bubble.remove(), 4000);
+                }, i * 35);
+            }
+        }
+    </script>
+
+</body>
+</html>
